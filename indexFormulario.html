@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+    <link type="text/css" rel="stylesheet" href="estilos.css"/>
+    <script type="text/javascript" src="javascript.js" defer> </script>        
+</head>
+
+<body>
+    <fieldset>
+        <legend>Validación de un Formulario</legend>
+        <form name="formulario" id="idFormulario" action="#" method="get">
+            <label for="idNombre">Nombre:</label>
+            <input type="text" name="nombre" id="idNombre" required />            
+            <spam id="idNombreError"class="errorSpam"></spam>
+            <br>
+            <br>
+            <label for="idApellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="idApellidos" />
+            <spam id="idApellidosError" class="errorSpam"></spam>
+            <br>
+            <br>
+            <label for="idEdad">Edad:</label>            
+            <input type="number" id="idEdad" name="edad" min="0" max="100">
+            <spam id="idEdadError" class="errorSpam"></spam>
+            <br>
+            <br>
+            <label for="idMatricula">Matrícula Coche:</label>
+            <input name="matricula" type="text" id="idMatricula" value="XXXX AAA" />          
+            <spam id="idMatriculaError" class="errorSpam"></spam>
+            <br>
+            <br>
+            <label for="idProvincia">Provincia:</label>
+            <select name="provincia" id="idProvincia">
+                <option value="0" selected="selected">Seleccione Provincia</option>
+                <option value=Gr>Granada</option>
+                <option value="Ma">Madrid</option>                
+            </select>            
+            <spam id="idProvinciaError" class="errorSpam"></spam>
+            <br>      
+            <br>            
+            <input type="reset" name="limpiar" id="idLimpiar" value="Limpiar" />
+            <input type="submit" name="enviar" id="idEnviar" value="Enviar" />
+        </form>
+    </fieldset>
+</body>
+</html>
